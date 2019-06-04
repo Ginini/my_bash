@@ -1,0 +1,21 @@
+ Invocare il comando echo in modo da fargli scrivere nello stderr la parola CIAO.
+Verificare che la parola NON vada sullo stdout
+
+
+#! /bin/bash
+ echo $1>&2
+grep 
+
+IL PROf lo fa così:
+echo CIAO 1>&2
+verificare lanciando echo CIAO 1>&2 | grep -v CIAO
+se ridiretto su stderr dovremmo vedere CIAO a video nonostante il flag -v
+
+Dubbi
+riga 1  #questo l'ho capito, lui non passa gli argomenti quindi riversa il stout sul sterror
+
+riga 2 #questo non lo capisco: grazie alla pipe io eseguo il grep sullo sterror, giusto? Ma ho letto che il flag -v ti consente di verificare che il Ciao NON ci sia nello sterror ma perché, lui dice, dovremmo vederlo? 
+
+questo lo so che dovrei saperlo, non mi sgridare. Perché davanti al bin/bash metto #! cosa significa? 
+
+

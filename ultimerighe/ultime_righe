@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "numero parametri \$# = $#"
+echo "primo parametro \$1 = $1"
+echo "secondo parametro \$2 = $2"
+
+if [ "$#" -ne 1 ]; then
+  echo "Illegal number of parameters" >&2
+  exit 1
+fi
+
+if [ -f $1 ]; then
+  # ./in_background $1 &
+  (sleep 10
+   echo "ciao") &
+else
+  echo "NO FILE" >&2
+fi
+

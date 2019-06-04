@@ -1,0 +1,10 @@
+
+
+1)Come si usa il comando tar. l'ho usato così e il verbose mi dà questi errori, ovviamnete non si è estratto nulla (se hai la pazienza di commentarmi ogni riga prima che divento come quella di the sinner) 
+
+vale@macchina:~$ tar -xzfv ./Downloads/ESERCIZI_CORREGGERE_ERRORI_1.tgz
+tar (child): v: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+
